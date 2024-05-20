@@ -1,0 +1,182 @@
+html{
+    /* background-color: bisque;*/
+}
+body{
+    background:rgb(203, 121, 13);
+    font-size: 25px;
+   
+}
+#tittle1{
+    text-align: center;
+    color: rgb(56, 47, 79);
+   background-color: rgb(251, 255, 0);
+}
+.heading1{
+    background-color: rgb(255, 255, 255);
+}
+#img{
+    float: right;;
+}
+#search-input {
+    width: 10%;
+    font-size: 1rem;
+    text-align: left;
+}
+#search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+.link1{
+    list-style-type: none;
+    color: blueviolet;
+    text-align: center;
+    background-color: aqua;
+}
+li{
+    display: inline;
+    padding-left: 50px;
+    margin: 2px 3px 3px 2px;
+}
+a{
+    text-decoration: none;
+}
+ul li a:hover{
+    color: red;
+    border: 2px solid rgb(0, 128, 43);
+    border-radius: 35px;
+    padding: 5px;
+}
+.productsimg-with-text{
+   float: inline-start;
+   border-radius: 35px;
+   padding-left: 20px;
+
+}
+#brand1{
+    border-radius: 35px;
+    margin-left: 45px;
+    margin-right: 10px;
+    
+}
+.brandinfo1{
+    position: absolute;
+    bottom: 70px;
+    left: 40%;
+    background-color: coral;
+    padding: auto;
+    margin-left: 0%;
+    margin-right: 35%;
+    border-radius: 10px;
+}
+.bottom-link{
+    margin: 20px;
+    display: flex;
+    margin-left: 40%;
+    margin-right: 35%;
+    justify-content: center;
+    text-decoration: underline;
+}
+.bottom-link a:hover{
+    background-color: blue;
+    border-radius: 20px;
+    color: deeppink;
+    padding: 20px;
+
+}
+h1{
+    text-align: center;
+}
+.card-body{
+    height: 50%;
+}
+.productsimg2{
+    position: relative;
+    background-color: black;
+}
+#brand2{
+    border-radius: 35px;
+    margin-left: 45px;
+    margin-right: 10px;
+}
+.brandinfo2{
+    position: absolute;
+    left: 40%;
+    right: 30%;
+    background-color: chocolate;
+    position: absolute;
+    bottom: 0px;  
+    z-index: 2; 
+    font-size: 14px;
+    border-radius: 20px;
+    padding-left: 0px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+.brandinfo2 p{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.card{
+    font-size: 14px;
+    height: 500px;
+}
+.card img{
+    height: 200px;
+    border-radius: 20px;
+    border: 5px solid goldenrod;
+}
+.card .paragraph{
+    justify-content: center;
+    margin: 40px;
+}
+.bottom-link1{
+    margin: 20px;
+    display: flex;
+    margin-left: 40%;
+    margin-right: 35%;
+    justify-content: center;
+    text-decoration: underline;
+}
+.bottom-link1 a:hover{
+    background-color: goldenrod;
+    border-radius: 20px;
+    color: aqua;
+    padding: 10px;
+
+}
+.description{
+    display: flex;
+}
+.description .info1{
+    font-size: 20px;
+    width: 75%;
+    padding-left: 20px;
+}
+.description iframe{
+    border-radius: 25px;
+    padding-right: 20px;
+}
+.description h1{
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .description, .info1{
+        height: 300px;
+    }
+}
+.read{
+    background-color: black;
+    width: 15%;
+}
+.platforms h2{
+    text-align: center;
+}
