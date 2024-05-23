@@ -39,6 +39,15 @@ body{
     text-align: left;
     border-radius: 10px;
 }
+@media(min-width: 577px) and (max-width: 767){
+    .link1{
+        width: 12rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        position: absolute;
+        z-index: 100;
+    }
+}
 #search-button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -93,12 +102,16 @@ a{
 }
 .brandinfo1 h2{
     padding: 5px 10px 5px 10px;
+    
+}
+.brandinfo1 a{
+    text-decoration: underline;
 }
 
 .brandinfo1 a:hover{    
     border-radius: 20px;
-    color: white;
     padding: 20px;
+    
 
 }
 h1{
@@ -131,6 +144,9 @@ h1{
     padding-top: 10px;
 
 }
+.brandinfo2 .link2{
+    text-decoration: underline;
+}
 .brandinfo2 p{
     color: black;
     font-size: large;
@@ -141,6 +157,7 @@ h1{
     height: 500px;
     margin-right: 20px;
     border: none;
+
 }
 .card img{
     height: 200px;
@@ -152,6 +169,10 @@ h1{
     /* margin: 40px; */
     background-color: black;
     color: wheat;
+    border-radius: 20px;
+    text-align: center !important;
+    width: 50%;
+    position: relative;
     
 }
 
@@ -179,6 +200,69 @@ h1{
 .description h1{
     text-align: center;
 }
+@media (max-width: 767.98px) {
+    body{
+        margin: px;
+        text-align: justify;
+        font-size: xx-small;
+    }
+    .description{
+        display: block;
+        /* height: 500px; */
+        font-size: 10px;
+    }
+    img{
+        width: 50%;
+    }
+    .cardsimage img{
+        width: auto;
+        height: 50px;
+    }
+    .brandinfo1{
+        position: absolute;
+        bottom: 40px;
+        left: 40%;
+        background-color: white;
+        margin-left: 0%;
+        margin-right: 35%;
+        border-radius: 3px;
+        text-align: center;
+           
+    }
+    .cardsimage{
+        display: flex;
+        gap: 1px;
+        padding: 1px;
+        
+    }
+    .cardsimage img{
+        width: 25%;
+        height: 50px;
+        padding: 2px 2px 2px 2px;
+        border-radius: 3px;
+        border: 2px solid goldenrod;
+        padding: 0px;
+    }
+    
+}
+@media (max-width: 575.98px){
+    .description{
+        display: block;
+        font-size: 12px;
+        
+    }
+    .brandinfo1{
+        position: absolute;
+        bottom: -10px;
+        left: 40%;
+        background-color: white;
+        margin-left: 0%;
+        margin-right: 35%;
+        border-radius: 3px;
+        text-align: center;
+           
+    }
+}
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -198,11 +282,7 @@ footer img{
     width: 30px;
     border-radius: 20px;
 }
-@media screen and (max-width: 800px) {
-    .description, .info1{
-        height: 300px;
-    }
-}
+
 .read{
     background-color: black;
     width: max-content;
@@ -212,7 +292,10 @@ footer img{
     font-size: 0.6em;
     letter-spacing: 2px;
     border-radius: 2px;
-    color: white;
+    
+}
+.read a{
+    color:antiquewhite;
 }
 .platforms h2{
     text-align: center;
@@ -225,7 +308,6 @@ footer img{
 }
 .cardsimage img{
     width: 15%;
-    height: 250px;
     padding: 2px 2px 2px 2px;
     border-radius: 3px;
     border: 2px solid goldenrod;
@@ -240,8 +322,10 @@ footer img{
 }
 .carousel-control-prev-icon{
     background-color: black;
+    border-radius: 35px;
 }
 .carousel-control-next-icon{
     background-color: black;
+    border-radius: 35px;
 }
 
