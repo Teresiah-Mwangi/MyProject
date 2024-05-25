@@ -51,7 +51,7 @@ body{
 #search-button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #4CAF50;
+    background-color: lightgrey;
     color: white;
     border: none;
     cursor: pointer;
@@ -67,16 +67,37 @@ body{
 li{
     display: inline;
     padding-left: 50px;
-    margin: 2px 3px 3px 2px;
+    margin: 1px 1px 3px 1px;
 }
 a{
     text-decoration: none;
 }
+.nav-bar-container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
  nav ul li a:hover{
-    color: red;
-    border: 2px solid rgb(0, 128, 43);
-    border-radius: 35px;
-    padding: 5px;
+    all:unset;
+    color: rgb(47, 47, 47, 0.7);
+    border: 0px;
+    border-bottom: 2px solid rgb(37, 36, 36, 0.5);  
+    padding: 4px;
+    padding: 0px;
+}
+nav ul li a.active{
+    all:unset;
+    color: rgb(47, 47, 47, 0.7);
+    border: 0px;
+    border-bottom: 2px solid rgb(37, 36, 36, 0.5);  
+    padding: 4px;
+    padding: 0px;
+}
+nav ul li a{
+    color: black;     
+    padding: 0px;
 }
 .productsimg-with-text{
    float: inline-start;
@@ -91,7 +112,7 @@ a{
 }
 .brandinfo1{
     position: absolute;
-    bottom: -30px;
+    bottom: -60px;
     left: 40%;
     background-color: white;
     margin-left: 0%;
@@ -106,6 +127,7 @@ a{
 }
 .brandinfo1 a{
     text-decoration: underline;
+    color: black;
 }
 
 .brandinfo1 a:hover{    
@@ -162,7 +184,7 @@ h1{
 .card img{
     height: 200px;
     border-radius: 2px;
-    border: 3px solid rgb(11, 10, 6);
+    
 }
 .card .paragraph{
     justify-content: center;
@@ -170,9 +192,9 @@ h1{
     background-color: black;
     color: wheat;
     border-radius: 20px;
-    text-align: center !important;
     width: 50%;
     position: relative;
+    text-align: justify !important;
     
 }
 
@@ -243,6 +265,9 @@ h1{
         border: 2px solid goldenrod;
         padding: 0px;
     }
+    .carousel-item{
+        display: inline-flex;
+    }
     
 }
 @media (max-width: 575.98px){
@@ -266,11 +291,15 @@ h1{
 footer{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
-    color: white;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+footer div span hr p{
+    font-size: 25px;
 }
 footer hr{
-    background-color: white;
+    background-color: black;
+    height: 5px;
 }
 footer div{
     margin: 0 10px;
