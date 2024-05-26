@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-html{
-    /* background-color: bisque;*/
-}
 body{
     font-size: 25px;
     font-family: "Playfair Display", serif;   
@@ -9,7 +6,7 @@ body{
 #title1{
     text-align: center;
     color: rgb(56, 47, 79);
-    background-color:white;
+    background-color:rgba(102, 98, 98, 0.382);
     padding: 20px;
 }
 .sign-in{
@@ -38,31 +35,21 @@ body{
     font-size: 1rem;
     text-align: left;
     border-radius: 10px;
+    border: solid gold;
 }
-@media(min-width: 577px) and (max-width: 767){
-    .link1{
-        width: 12rem;
-        padding-top: 1rem;
-        padding-left: 2rem;
-        position: absolute;
-        z-index: 100;
-    }
+.bi{
+    background-color: gold;
 }
-#search-button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: lightgrey;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    border-radius: 10px;
+.searchbar{
+    display: flex;
+     
 }
+
 .link1{
     list-style-type: none;
-    color: white;
+    color: rgb(24, 143, 217);
     text-align: center;
-    background-color: white;
+    background-color: rgb(241, 244, 245);
 }
 li{
     display: inline;
@@ -71,6 +58,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: aqua;
 }
 .nav-bar-container{
     position: sticky;
@@ -81,11 +69,12 @@ a{
 }
  nav ul li a:hover{
     all:unset;
-    color: rgb(47, 47, 47, 0.7);
-    border: 0px;
-    border-bottom: 2px solid rgb(37, 36, 36, 0.5);  
+    color: rgba(235, 18, 18, 0.7);
+    border: 5px;
+    border-bottom: 2px solid rgba(2, 248, 84, 0.5);
+    border-radius: 10px;  
     padding: 4px;
-    padding: 0px;
+    padding: 2px;
 }
 nav ul li a.active{
     all:unset;
@@ -99,6 +88,20 @@ nav ul li a{
     color: black;     
     padding: 0px;
 }
+.dropdown-menu {
+   height: 400px;
+   position: absolute;
+   width: 50%;
+   background-color: bisque;
+   z-index: 2;
+   top: 4px;
+   width: 40%;
+    }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
 .productsimg-with-text{
    float: inline-start;
    border-radius: 5x;
@@ -184,17 +187,19 @@ h1{
 .card img{
     height: 200px;
     border-radius: 2px;
-    
+    display: grid;
 }
 .card .paragraph{
     justify-content: center;
     /* margin: 40px; */
     background-color: black;
     color: wheat;
-    border-radius: 20px;
-    width: 50%;
+    width: 60%;
     position: relative;
     text-align: justify !important;
+    display: grid;
+    display: bottom;
+    margin top: 0px ;
     
 }
 
@@ -291,14 +296,15 @@ h1{
 footer{
     display: flex;
     justify-content: space-evenly;
-    color: rgba(0, 0, 0, 0.8);
+    color: white;
+    background-color: rgb(38, 38, 38);
     font-size: 14px;
 }
 footer div span hr p{
     font-size: 25px;
 }
 footer hr{
-    background-color: black;
+    background-color: rgba(240, 238, 238, 0.955);
     height: 5px;
 }
 footer div{
@@ -356,5 +362,35 @@ footer img{
 .carousel-control-next-icon{
     background-color: black;
     border-radius: 35px;
+}
+@media(min-width: 577px) and (max-width: 767){
+    .link1{
+        width: 12rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        position: absolute;
+        z-index: 100;
+    }
+    footer{
+        flex-grow: 20px;
+    }
+    .navbar-toggler-icon{
+        float: left;
+    }
+}
+@media (min-width: 767.98px) and (max-width: 991.98px){
+   #search-button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        border-radius: 10px;
+}
+    .navbar-toggler-icon{
+
+}
 }
 

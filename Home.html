@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Furniture Haven</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Stylesheet.css">
     
@@ -16,7 +17,7 @@
         <div class="items">
           <div class="searchbar">
             <input type="text" id="search-input" placeholder="Search furniture...">
-            <button id="search-button">Search</button>
+            <i class="bi bi-search" style="border: 2px solid black; border-radius: 10px; height: 40px;"></i>
           </div>
           <div class="sign-in">
             <div>
@@ -26,14 +27,52 @@
           </div>
         </div>
         </div>
-        <hr>
+        <hr class="d-none d-md-block">
         <nav class="nav-bar-container">
-            <ul class="link1">
-                <li ><a href="#home">Home</a></li>
+            <ul class="link1 d-none d-md-block">
+                <li ><a href="#home">Home</a></li> 
                 <li><a href="#about">About</a></li>
-                <li><a href="#product">Products</a></li>
+                <li class="dropdown"> <a href="#product" class="dropdown-toggle">Products</a> 
+                  <ol class="dropdown-menu"> 
+                  <li><a href="#">Dining Table</a></li>
+                  <li><a href="#">Cozy Sofasets</a></li>
+                  <li><a href="#">Woderobe</a></li>
+                  <li><a href="#">Beds</a></li>
+                  </ol>
+              </li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark d-block d-md-none">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon " style="background-color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#" style="color: white; font-size: 16px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white; font-size: 16px;">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" style="color: white; font-size: 16px;">Contacts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 16px;">
+                        Product
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Dinning Tables</a></li>
+                        <li><a class="dropdown-item" href="#">Cozy Sofasets</a></li>
+                        <li><a class="dropdown-item" href="#">Classic Beds</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
         </nav>
     </header>
     <hr>
@@ -41,7 +80,7 @@
         <div class="productsimg" id="home" class="container-fluid">
             <img  id="brand1" src="./images/sofa3.jpg" alt="Furniture one"  style="height: 500px; width:100%;">
         </div>
-        <div class="brandinfo1">
+        <div class="brandinfo1 d-none d-lg-block">
            <h2>OUR FAVORITE BRANDS</h2>
            <P><a href="#">DIGITAL FURNITURE KENYA</a></P>
         </div><br>    
@@ -350,9 +389,9 @@
           </div>
          </div><br><br>
          <hr>
-        <footer>
+        <footer class="d-flex flex-grow">
           <div>
-            <span style="color: black; font-size: 20px"><b>Customer Service</b></span>
+            <span style="font-size: 20px"><b>Customer Service</b></span>
             <hr>
                 <p>Post-Sales Services</p>
                 <p>Warranty and Repairs</p>
@@ -360,7 +399,7 @@
                 <p>Flexible Financing Options</p>
           </div>
           <div>
-            <span style="color: black; font-size: 20px"><b>Visit Our Store</b></span>
+            <span style=" font-size: 20px"><b>Visit Our Store</b></span>
             <hr>
                 <p>We are located along:</p>
                 <p>TRM drive</p>
@@ -368,7 +407,7 @@
                 <p>@modernfurniture.com</p>
           </div>
           <div>
-            <span style="color: black; font-size: 20px;"><b>Connect With Us at:</b></span>
+            <span style="font-size: 20px;"><b>Connect With Us at:</b></span>
             <hr>
                 <img src="./images/facebook.webp" alt="">
                 <img src="./images/twitter.jpg" alt="">
